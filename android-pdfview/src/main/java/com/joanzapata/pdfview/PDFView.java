@@ -193,6 +193,9 @@ public class PDFView extends SurfaceView {
         dragPinchManager = new DragPinchManager(this);
 
         paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setFilterBitmap(true);
+        paint.setDither(true);
         debugPaint = new Paint();
         debugPaint.setStyle(Style.STROKE);
         paintMinimapBack = new Paint();
